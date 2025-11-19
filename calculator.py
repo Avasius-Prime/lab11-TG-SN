@@ -1,3 +1,7 @@
+# https://github.com/Avasius-Prime/lab11-TG-SN.git
+# Partner 1: Timothy Giles (did not participate)
+# Partner 2: Selasi Nukunya
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
