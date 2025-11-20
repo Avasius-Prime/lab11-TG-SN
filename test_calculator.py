@@ -73,8 +73,12 @@ class TestCalculator(unittest.TestCase):
         result = log(x, y)
         self.assertEqual(result, expected)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        x = 3
+        y = 4
+        expected = 5
+        result = hyp(x, y)
+        self.assertEqual(result, expected)
 
     # def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
