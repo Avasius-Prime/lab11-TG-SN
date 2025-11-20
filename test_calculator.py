@@ -80,7 +80,7 @@ class TestCalculator(unittest.TestCase):
         result = hyp(x, y)
         self.assertEqual(result, expected)
 
-    # def test_sqrt(self): # 3 assertions
+    def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #    square_root(NUM)
