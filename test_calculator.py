@@ -85,8 +85,10 @@ class TestCalculator(unittest.TestCase):
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #    square_root(NUM)
     #     # Test basic function
-    #     fill in code
-    ##########################
+        x = -1
+        expected = ValueError
+        result = sqrt(x)
+        self.assertEqual(result, expected)
 
 # Do not touch this
 if __name__ == "__main__":
