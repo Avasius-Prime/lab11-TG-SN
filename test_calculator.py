@@ -53,8 +53,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
     # use same technique from test_divide_by_zero
-        x = 100
-        y = 1
+        x = 1
+        y = 100
         with self.assertRaises(ValueError):
             logarithm(x, y)
     
