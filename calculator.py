@@ -12,7 +12,7 @@ import math
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -24,7 +24,7 @@ def div(a, b):
     else:
         return b / a
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 1 or b <= 0:
         raise ValueError
     else:
@@ -33,10 +33,10 @@ def log(a, b):
 def exp(a, b):
     return a^b
 
-def hyp(a, b):
+def hypotenuse(a, b):
     return math.sqrt((a^2) + (b^2))
 
-def sqrt(a):
+def square_root(a):
     if a < 0:
         raise ValueError
     else:
