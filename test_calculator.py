@@ -14,9 +14,12 @@ class TestCalculator(unittest.TestCase):
         result = add(x, y)
         self.assertEqual(result, expected)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_subtract(self): # 3 assertions
+        x = 1
+        y = 1
+        expected = 0
+        result = sub(x, y)
+        self.assertEqual(result, expected)
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
