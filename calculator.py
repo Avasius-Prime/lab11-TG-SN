@@ -32,3 +32,12 @@ def log(a, b):
 
 def exp(a, b):
     return a^b
+
+def hyp(a, b):
+    return math.sqrt((a^2) + (b^2))
+
+def sqrt(a):
+    if a < 0:
+        raise ValueError
+    else:
+        return math.sqrt(a)
