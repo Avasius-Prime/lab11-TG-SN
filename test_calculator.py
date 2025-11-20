@@ -67,7 +67,11 @@ class TestCalculator(unittest.TestCase):
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
-    #     fill in code
+        x = 0
+        y = 5
+        expected = ValueError
+        result = log(x, y)
+        self.assertEqual(result, expected)
 
     # def test_hypotenuse(self): # 3 assertions
     #     fill in code
