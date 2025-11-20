@@ -54,10 +54,13 @@ class TestCalculator(unittest.TestCase):
         result = log(x, y)
         self.assertEqual(result, expected)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+    def test_log_invalid_base(self): # 1 assertion
+    # use same technique from test_divide_by_zero
+        x = 100
+        y = 1
+        expected = ValueError
+        result = log(x, y)
+        self.assertEqual(result, expected)
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
