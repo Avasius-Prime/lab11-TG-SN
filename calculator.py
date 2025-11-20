@@ -31,10 +31,10 @@ def logarithm(a, b):
         return math.log(b, a) # use math library + raise ValueError
 
 def exp(a, b):
-    return a^b
+    return a**b
 
 def hypotenuse(a, b):
-    return math.sqrt((a^2) + (b^2))
+    return math.sqrt((a**2) + (b**2))
 
 def square_root(a):
     if a < 0:
