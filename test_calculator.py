@@ -41,11 +41,8 @@ class TestCalculator(unittest.TestCase):
     #     # call division function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
-        x = 0
-        y = 1
-        expected = ZeroDivisionError
-        result = div(x, y)
-        self.assertEqual(result, expected)
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
 
     def test_logarithm(self): # 3 assertions
         x = 100
@@ -58,9 +55,8 @@ class TestCalculator(unittest.TestCase):
     # use same technique from test_divide_by_zero
         x = 100
         y = 1
-        expected = ValueError
-        result = logarithm(x, y)
-        self.assertEqual(result, expected)
+        with self.assertRaises(ValueError):
+            logarithm(x, y)
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
@@ -69,9 +65,9 @@ class TestCalculator(unittest.TestCase):
     #     #     logarithm(0, 5)
         x = 0
         y = 5
-        expected = ValueError
-        result = logarithm(x, y)
-        self.assertEqual(result, expected)
+
+        with self.assertRaises(ValueError):
+            logarithm(x, y)
 
     def test_hypotenuse(self): # 3 assertions
         x = 3
@@ -86,9 +82,9 @@ class TestCalculator(unittest.TestCase):
     #     #    square_root(NUM)
     #     # Test basic function
         x = -1
-        expected = ValueError
-        result = square_root(x)
-        self.assertEqual(result, expected)
+
+        with self.assertRaises(ValueError):
+            square_root(x)
 
 # Do not touch this
 if __name__ == "__main__":
