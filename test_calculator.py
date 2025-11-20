@@ -7,8 +7,12 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        x = 1
+        y = 1
+        expected = 2
+        result = add(x, y)
+        self.assertEqual(result, expected)
 
     # def test_subtract(self): # 3 assertions
     #     fill in code
