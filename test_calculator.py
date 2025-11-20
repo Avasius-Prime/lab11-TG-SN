@@ -47,8 +47,12 @@ class TestCalculator(unittest.TestCase):
         result = div(x, y)
         self.assertEqual(result, expected)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        x = 100
+        y = 10
+        expected = 2
+        result = log(x, y)
+        self.assertEqual(result, expected)
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
