@@ -45,8 +45,8 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self): # 3 assertions
-        x = 100
-        y = 10
+        x = 10
+        y = 100
         expected = 2
         result = logarithm(x, y)
         self.assertEqual(result, expected)
