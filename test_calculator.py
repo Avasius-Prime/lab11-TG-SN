@@ -41,7 +41,11 @@ class TestCalculator(unittest.TestCase):
     #     # call division function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
-    #     fill in code
+        x = 0
+        y = 1
+        expected = ZeroDivisionError
+        result = div(x, y)
+        self.assertEqual(result, expected)
 
     # def test_logarithm(self): # 3 assertions
     #     fill in code
