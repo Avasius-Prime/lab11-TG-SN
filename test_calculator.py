@@ -18,7 +18,7 @@ class TestCalculator(unittest.TestCase):
         x = 1
         y = 1
         expected = 0
-        result = sub(x, y)
+        result = subtract(x, y)
         self.assertEqual(result, expected)
 
     ######## Partner 1
@@ -51,7 +51,7 @@ class TestCalculator(unittest.TestCase):
         x = 100
         y = 10
         expected = 2
-        result = log(x, y)
+        result = logarithm(x, y)
         self.assertEqual(result, expected)
 
     def test_log_invalid_base(self): # 1 assertion
@@ -59,7 +59,7 @@ class TestCalculator(unittest.TestCase):
         x = 100
         y = 1
         expected = ValueError
-        result = log(x, y)
+        result = logarithm(x, y)
         self.assertEqual(result, expected)
     
     ######## Partner 1
@@ -70,14 +70,14 @@ class TestCalculator(unittest.TestCase):
         x = 0
         y = 5
         expected = ValueError
-        result = log(x, y)
+        result = logarithm(x, y)
         self.assertEqual(result, expected)
 
     def test_hypotenuse(self): # 3 assertions
         x = 3
         y = 4
         expected = 5
-        result = hyp(x, y)
+        result = hypotenuse(x, y)
         self.assertEqual(result, expected)
 
     def test_sqrt(self): # 3 assertions
@@ -87,7 +87,7 @@ class TestCalculator(unittest.TestCase):
     #     # Test basic function
         x = -1
         expected = ValueError
-        result = sqrt(x)
+        result = square_root(x)
         self.assertEqual(result, expected)
 
 # Do not touch this
