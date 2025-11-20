@@ -29,9 +29,12 @@ class TestCalculator(unittest.TestCase):
         result = mul(x, y)
         self.assertEqual(result, expected)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_divide(self): # 3 assertions
+        x = 1
+        y = 1
+        expected = 1
+        result = div(x, y)
+        self.assertEqual(result, expected)
 
     ######## Partner 2
     # def test_divide_by_zero(self): # 1 assertion
